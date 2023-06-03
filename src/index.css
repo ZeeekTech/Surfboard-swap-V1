@@ -1,0 +1,29 @@
+.board-selection-controls select {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color:aquamarines;
+  color:lightseagreen;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 3rem;
+}
+
+.board-selection-controls button {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: orange; /* Adjust this to the color you want */
+  color: rgb(251, 251, 251);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+.board-selection-controls button:hover {
+  background-color:orange;
+}
