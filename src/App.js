@@ -50,8 +50,156 @@ const surfboards = [
     maneuverability: '5/5',
     paddlePower: '5/5',
 
-    }
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+    {
+      name:,
+      image:
+      dimensions:
+      rocker:
+      concave:
+      tail:
+      material:
+      wave:
+      price:
+      driveAndSpeed:
+      maneuverability:
+      paddlePower:
+
+    },
+
+
 ];
+
+
 
 function App() {
   const [leftSurfboard, setLeftSurfboard] = useState(surfboards[0]);
@@ -67,15 +215,18 @@ function App() {
     const surfboardIndex = event.target.value;
     const surfboard = surfboards[surfboardIndex];
     setRightSurfboard(surfboard);
-  }
+  } 
 
-  return (
+
+
+
+   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">SELECT-A-SLED</h1>
       </header>
       <div className="board-selection">
-        <div className="board-selection-left">
+        <div className="board-selection-right">
         <div className="board-container"> 
         <img className="surfboard-image" src={rightSurfboard.image} alt={rightSurfboard.name} />
         <SurfBoardProperties 
@@ -96,7 +247,7 @@ function App() {
             </ul>
             </div>
           </div>
-          <div className="board-selection-controls">
+          <div className="board-selection-controls-right">
             <select value={surfboards.indexOf(rightSurfboard)} onChange={handleRightSelectChange}>
               {surfboards.map((surfboard, index) => (
                 <option key={index} value={index}>{surfboard.name}</option>
@@ -104,12 +255,10 @@ function App() {
             </select>
           </div>
         </div>
-  
         <div className="vs-container">
           <div className="vs">VS</div>
-        </div>
-  
-        <div className="board-selection-right">
+        </div> 
+        <div className="board-selection-left">
         <div className="board-container"> 
         <img className="surfboard-image" src={leftSurfboard.image} alt={leftSurfboard.name} />
         <SurfBoardProperties 
@@ -130,7 +279,7 @@ function App() {
             </ul>         
             </div>
           </div>
-          <div className="board-selection-controls">
+          <div className="board-selection-controls-left">
             <select value={surfboards.indexOf(leftSurfboard)} onChange={handleLeftSelectChange}>
               {surfboards.map((surfboard, index) => (
                 <option key={index} value={index}>{surfboard.name}</option>
@@ -140,8 +289,6 @@ function App() {
         </div>
       </div>
     </div>
-  );}
+  );} 
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
-export default App;
+  export default App;

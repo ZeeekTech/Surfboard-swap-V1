@@ -96,13 +96,24 @@ body;
   margin-bottom: 1rem;
 }
 
+
+.vs-container {
+  color: chartreuse;
+  font-size: xx-large;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  margin-left: 2px;
+
+
+}
+
 /* Board selection controls */
 .board-selection-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-  margin-left: 9rem;
+  margin-left: 5rem;
 }
 
 
@@ -115,5 +126,4 @@ body;
   margin-right: 3rem;
 
 }
-
 

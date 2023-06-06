@@ -12,3 +12,5 @@ root.render(
 );
 
 reportWebVitals();
+
+ReactDOM.render(<App />, document.getElementById('root'));
