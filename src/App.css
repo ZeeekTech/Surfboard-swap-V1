@@ -99,12 +99,12 @@ body;
 
 .vs-container {
   color: chartreuse;
-  font-size: xx-large;
+  font-size: 2.5rem;
   font-family: 'Press Start 2P', cursive;
-  display: flex;
-  margin-left: 2px;
-
-
+  position:  relative;
+  top: -175px;
+  margin-left: 6.25px;
+  margin-right: 0px;
 }
 
 /* Board selection controls */
